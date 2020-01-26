@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #151515 url("../imag/bg.png") no-repeat fixed left bottom;
+  background-size: cover;
+  text-align: center;
+  font-family: "Hannarihiragino kaku gothic pron" sans-serif;
+}
+
+.wf-hannari {
+  font-family: "Hannari";
+}
+
+.name {
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+.nav {
+  margin-top: 15px;
+}
+
+.nav .lili {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav .lili a {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 8px;
+  color: #666;
+  font-size: 1.3rem;
+  transition: 1s;
+}
+
+.nav .lili a:hover {
+  background-color: #fff;
+}
+
+.header {
+  /* scroll-behavior: smooth; */
+  padding: 50px 30px;
+}
+.about {
+  padding: 150px 30px;
+  background-color: #fff;
+  color: #333;
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 2.8rem;
+}
+.heading::before,
+.heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
+
+.about-text {
+  font-size: 1.3rem;
+}
+
+.skills-wrapper {
+  display: table;
+  width: 80%;
+  margin: auto;
+  table-layout: fixed;
+  padding: 150px 30px;
+}
+.skill-box {
+  display: table-cell;
+}
+
+.heading2 {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 2.8rem;
+}
+
+.heading2::before,
+.heading2::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+
+.skill-title {
+  color: #fff;
+  margin-top: 50px;
+}
+
+.skill-text {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.works {
+  background-color: #fff;
+  padding: 150px 30px;
+  display: table;
+  width: 100%;
+}
+
+.work-box {
+  position: relative;
+  display: table-cell;
+}
+/* .work-box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: url("../imag/tree.jpg") no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.2;
+  transform: scaleY(-1);
+} */
+
+.works-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: auto;
+  table-layout: fixed;
+}
+
+.work-image {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+.work-description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+} */
+
+/* .work-description-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+} */
+.work-text {
+  /* display: table-cell; */
+  vertical-align: middle;
+  font-size: 1.5rem;
+  line-height: 2;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+.button {
+  color: black;
+  border: solid 1px;
+}
+
+/* .work-box:nth-child(odd) .work-image {
+  margin: 60% 0 0;
+} */
+/* .work-box:nth-child(odd) .work-description,
+.work-box:nth-child(odd)::after {
+  top: 0em;
+} */
+
+.contact {
+  padding: 60px 0 150px;
+}
+.contact-form {
+  width: 50%;
+  margin: 80px auto 0;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: white;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form input[type="submit"] {
+  /* display: block; */
+  width: 200px;
+  max-width: 40px auto 0;
+  page-break-after: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+}
+.contact-form input[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+
+.footer {
+  padding: 12px 0;
+  font-size: 2rem;
+  color: #fff;
+  padding-top: 80px;
+}
